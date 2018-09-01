@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Willkommen bei Nimblecraft!</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: aqua;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: red;
+            text-decoration: underline;
+        }
+
+        dt {
+            font-weight: bold;
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        #content {
+            grid-area: content;
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        #wrapper {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-areas: "header" "nav" "content" "footer";
+        }
+
+        @media (min-width: 700px) {
+            #wrapper {
+                grid-template-columns: 1fr 4fr;
+                grid-template-areas: "header header" "nav content" "footer footer"
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+        }
+
+        #angebot,
+        #standorte,
+        #team,
+        #minecraft {
+            display: none;
+        }
+
+        .nav-item {
+            cursor: pointer;
+        }
+
+        .nav-item.active {
+            font-weight: bold;
+        }
+
+        .nav-item.active::before {
+            content: url(gif/dancing-blue-arrow-slow.gif);
+            padding-right: 0.2rem;
+        }
+
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <a href="./index.html"><h1>Nimblecraft – wir entwickeln software...</h1></a>
+        <hr>
+    </header>
+    <nav id="navigation">
+        <h3>Nimblecraft</h3>
+        <ul>
+            <li onclick="show('ueberuns')" class="nav-item active" id="nav-item-ueberuns">Über Uns</li>
+            <li onclick="show('angebot')" class="nav-item" id="nav-item-angebot">Angebot</li>
+            <li onclick="show('standorte')" class="nav-item" id="nav-item-standorte">Standorte</li>
+            <li onclick="show('team')" class="nav-item" id="nav-item-team">Team</li>
+            <li onclick="show('minecraft')" class="nav-item" id="nav-item-minecraft">Minecraft</li>
+            <li class="nav-item"><a href="indexEN.html">English Version</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <section id="ueberuns">
+            <h2>Über Uns</h2>
+
+            <img src="gif/3-bobbing-hamsters.gif"/>
+
+            <p>
+                Wir sind Nimblecraft – ein Softwareunternehmen mit Sitz in Bonn und Filialen in Hamburg und Białystok
+                (PL).
+                Softwareentwicklung ist unsere Leidenschaft. Wir verlassen uns auf Java, Open Source – und nicht zuletzt
+                auf unser erfahrenes Team. All dies setzen wir ein, um für unsere Kunden im Raum Köln/Bonn und Hamburg
+                geschäftskritische Software zu erstellen oder Sie in Fragen der Architektur, der Werkzeuge oder des
+                Vorgehens zu beraten.
+            </p>
+        </section>
+
+        <section id="angebot">
+            <h2>Angebot</h2>
+
+            <img src="gif/ringing-bell.gif"/>
+
+            <article>
+                <h3>Produktentwicklung</h3>
+                <p>Sie wollen eine mobile oder webbasierte Anwendung umsetzen, die es nicht als Standardlösung gibt? Wir
+                    unterstützen Sie im gesamten Ablauf von der Ideenfindung bis zum fertigen Produkt. Wir entwickeln
+                    die
+                    Software agil mit schnellen Feedbackzyklen. Wir sind die Spezialisten für Technik und unterstützen
+                    Entscheidungen konstruktiv mit kritischen Fragen und brillanten Lösungsideen. Lean Startup oder
+                    Scrum?
+                    Beides! Wenn aus einem MVP ein erfolgreiches Produkt entsteht, können wir skalieren. Wir liefern ein
+                    qualitativ hochwertiges, betriebsfertiges Produkt in der Cloud und stehen für Pflege und
+                    kontinuierliche
+                    Weiterentwicklung bereit.</p>
+            </article>
+
+            <img src="gif/hacking-computer-nerd.gif"/>
+
+            <article>
+                <h3>Digitalisierung</h3>
+                <p>Sie wollen effizienter und moderner werden, neue Potentiale durch Integration bestehender Dienste,
+                    Einsatz von künstlicher Intelligenz und komplexer Automatisierung ausschöpfen? Wir unterstützen Sie,
+                    indem wir Geschäftsmodelle, Daten und Anforderungen analysieren und diese logisch und technisch
+                    hinterfragen. Dabei sind wir konstruktiv und liefern exzellente Lösungsvorschläge. Nach der Analyse
+                    entwickeln wir Services oder ganze Systeme. Wir treiben den Prozess bis zur fertigen Lösung und
+                    lassen unsere Kunden auch im Betrieb nicht allein. Dabei entwickeln wir agil und arbeiten zum
+                    Festpreis.</p>
+            </article>
+
+            <img src="gif/computer-using-itself.gif"/>
+
+            <article>
+                <h3>Consulting</h3>
+                <p>Sie benötigen externe Ressourcen, wollen etwas verändern oder benötigen Rat von Experten? Wir
+                    übernehmen
+                    Entwicklungsarbeiten oder beraten Sie in Fragen der Architektur und der Methodik. Unsere erfahrenen
+                    Mitarbeiter bringen dabei immer ein agiles Mindset mit, arbeiten praxisorientiert und schaffen
+                    Werte:
+                    Vor Ort (nur Hamburg oder Bonn) mit hochqualifizierten Fachkräften in der Software-Entwicklung oder
+                    der
+                    Analyse von Geschäftsprozessen und Daten. So werden Sie in Ihren Prozessen agiler, schneller und
+                    erreichen eine höhere Qualität.</p>
+            </article>
+
+            <img src="gif/business-people-talking.gif"/>
+
+            <article>
+                <h3>Pflege und Wartung</h3>
+                <p>Sie suchen einen zuverlässigen Partner, der Ihre Systeme pflegt und wartet? Selbstverständlich
+                    übernehmen wir die Pflege für die Lösungen, die wir gebaut haben, sowie für bestehende Java-Systeme.
+                    Bei
+                    Software, die wir entwickelt haben, können wir dank des agilen Vorgehens und den automatisierten
+                    Tests
+                    auch später kleine und große Änderungen und Erweiterungen an der Software preiswert durchführen. So
+                    können Sie die Software lange weiter nutzen und dabei Sicherheitsanforderungen und gesetzliche
+                    Vorgaben
+                    erfüllen.</p>
+            </article>
+
+            <img src="gif/bouncing-computer-station.gif"/>
+
+            <article>
+                <h3>Unsere Systeme</h3>
+                <ul>
+                    <li>sind 24/7 verfügbar</li>
+                    <li>werden von großen Unternehmen europaweit eingesetzt</li>
+                    <li>verarbeiten mehrere Millionen Aufrufe am Tag</li>
+                    <li>bearbeiten Kundendaten von über 50 Millionen Kunden</li>
+                    <li>werden kontinuierlich integriert und getestet</li>
+                    <li>haben tausende Benutzer</li>
+                    <li>werden ständig weiterentwickelt, und das seit über zehn Jahren</li>
+                    <li>haben Altsysteme abgelöst</li>
+                    <li>sind vor allem Back-End-Systeme, haben aber auch Front-End Anteile</li>
+                </ul>
+            </article>
+
+            <img src="gif/fire-burning-hot-text.gif"/>
+
+            <article>
+                <h3>Unsere Werkzeuge</h3>
+                <dl>
+                    <dt>Java</dt>
+                    <dd>"Der Standard für performante und stabile Serversoftware."</dd>
+                    <dt>Spring</dt>
+                    <dd>"Hat Dependency Injection im Java Enterprise Umfeld verbreitet und durchgesetzt. JEE und der
+                        anderen Konkurrenz immer einen Schritt voraus."
+                    </dd>
+                    <dt>Hibernate</dt>
+                    <dd>"JPA als Standard, Hibernate als Implementierung – die etablierteste Lösung."</dd>
+                    <dt>Jenkins</dt>
+                    <dd>"Der Standard für Open Source Continuous Integration."</dd>
+                    <dt>Git</dt>
+                    <dd>"Über 65 Millionen GitHub Repositories und 24 Millionen registrierte Developer sprechen für
+                        sich."
+                    </dd>
+                    <dt>SonarQube</dt>
+                    <dd>"Das Data-Warehouse für Softwareentwicklung. Sahnehäubchen für Jenkins."</dd>
+                    <dt>Gradle</dt>
+                    <dd>"Das beste Java Build Tool. Schnellstes Feedback durch inkrementelle und parallele Builds.
+                        Essentiell für Continous Integration."
+                    </dd>
+                    <dt>Docker</dt>
+                    <dd>"In einem Container funktioniert Software auf allen Geräten gleich."</dd>
+                    <dt>Kubernetes</dt>
+                    <dd>"Automatisierte Skalierung und Orchestrierung von Containern."</dd>
+                    <dt>aws</dt>
+                    <dd>"Global produktiv sein - und das innerhalb von Minuten."</dd>
+                    <dt>TypeScript</dt>
+                    <dd>"Alle Vorteile ohne die Nachteile von Javascript."</dd>
+                    <dt>Cucumber</dt>
+                    <dd>"Das BDD-Tool, mit dem man Spezifikation und Testdokumentation kombiniert."</dd>
+                </dl>
+            </article>
+
+            <img src="gif/valentine-hearts.gif"/>
+
+        </section>
+
+        <section id="standorte">
+            <h2>Standorte</h2>
+
+            <img src="map.png" style="max-width: 100%;"/>
+        </section>
+
+        <section id="team">
+            <h2>Unser Team</h2>
+
+            <img src="gif/can-can-dancer-cow.gif"/>
+
+
+            <article>
+                <h3>Deutschland</h3>
+
+                <ul>
+                    <li><img src="img.png"/> Virginia Bechtel – Grafikdesignerin</li>
+                    <li><img src="img.png"/> Bastian Dirks – UI/UX Designer</li>
+                    <li><img src="img.png"/> Hildetraut Ehrenberg – Business Analystin</li>
+                    <li><img src="img.png"/> Wieland Fleischmann – Entwickler</li>
+                    <li><img src="img.png"/> Wanke Franka – Assistenz der Standortleitung Hamburg</li>
+                    <li><img src="img.png"/> Gertraud Freiberg – Business Analystin</li>
+                    <li><img src="img.png"/> Harribert Holzwarth – Business Analyst</li>
+                    <li><img src="img.png"/> Bernhardt Israel – Entwickler</li>
+                    <li><img src="img.png"/> Viviane Kipp – HR Business Partnerin</li>
+                    <li><img src="img.png"/> Eckard Linn – Entwickler</li>
+                    <li><img src="img.png"/> Joel Mack – Business Analyst</li>
+                    <li><img src="img.png"/> Falkhard Mahn – IT Support Engineer</li>
+                    <li><img src="img.png"/> Janette Meiser – Entwicklerin</li>
+                    <li><img src="img.png"/> Annetrud Paulus – Entwicklerin</li>
+                    <li><img src="img.png"/> Elgine Poth – UI/UX Designerin</li>
+                    <li><img src="img.png"/> Wolfdieter Preis – Assistenz der Geschäftsführung</li>
+                    <li><img src="img.png"/> Ulvi Schlichtling – Business Analyst</li>
+                    <li><img src="img.png"/> Bonifaz Schön – Standortleiter</li>
+                    <li><img src="img.png"/> Hartmund Scholze – Entwickler</li>
+                    <li><img src="img.png"/> Jobs Testmeyer – Geschäftsführer</li>
+                    <li><img src="img.png"/> Mathias Reitz – Business Analyst</li>
+                    <li><img src="img.png"/> Dietfried Witte – Business Analyst</li>
+                </ul>
+
+            </article>
+
+            <article>
+                <h3>Polen</h3>
+                <ul>
+                    <li><img src="img.png"/> Wisław Biskup – Entwickler</li>
+                    <li><img src="img.png"/> Artur Chalupa – Entwickler</li>
+                    <li><img src="img.png"/> Antonius Gielgud – Entwickler</li>
+                    <li><img src="img.png"/> Donat Jankiewicz – Entwickler</li>
+                    <li><img src="img.png"/> Lucjan Kawecki – Entwickler</li>
+                    <li><img src="img.png"/> Walter Lasota – Entwickler</li>
+                    <li><img src="img.png"/> Kwiatosław Pala – Entwickler</li>
+                    <li><img src="img.png"/> Radomir Rinas – Entwickler</li>
+                    <li><img src="img.png"/> Eugeniusz Wirkus – Entwickler</li>
+                    <li><img src="img.png"/> Sofroniusz Zagorski – Entwickler</li>
+                </ul>
+
+            </article>
+
+        </section>
+
+        <section id="minecraft">
+            <h2>Minecraft</h2>
+
+            <img src="gif/spinning-dice.gif"/>
+            <img src="gif/spinning-dice.gif"/>
+            <img src="gif/spinning-dice.gif"/>
+            <img src="gif/spinning-dice.gif"/>
+            <img src="gif/spinning-dice.gif"/>
+            <img src="gif/spinning-dice.gif"/>
+
+            <p>Unser Firmenname ist Nimblecraft – was läge näher, als einen eigenen Minecraft-Server anzubieten!</p>
+
+            <p>Unser Minecraft-Server verwendet eine Whitelist. Bitte kontaktiere uns unter
+                <img src="aksdlfjksldf.png"/> , um auf die Whitelist zu kommen!</p>
+        </section>
+    </div>
+    <footer><a href="https://www.cronn.de">Schauen Sie doch auch mal bei der Konkurrenz vorbei!</a></footer>
+</div>
+<script type="text/javascript">
+    function show(page) {
+        let ueberuns = document.getElementById('ueberuns');
+        let angebot = document.getElementById('angebot');
+        let standorte = document.getElementById('standorte');
+        let team = document.getElementById('team');
+        let minecraft = document.getElementById('minecraft');
+        let nav_item_ueberuns = document.getElementById('nav-item-ueberuns');
+        let nav_item_angebot = document.getElementById('nav-item-angebot');
+        let nav_item_standorte = document.getElementById('nav-item-standorte');
+        let nav_item_team = document.getElementById('nav-item-team');
+        let nav_item_minecraft = document.getElementById('nav-item-minecraft');
+
+        ueberuns.style.display = 'none';
+        angebot.style.display = 'none';
+        standorte.style.display = 'none';
+        team.style.display = 'none';
+        minecraft.style.display = 'none';
+
+        nav_item_ueberuns.classList.remove('active');
+        nav_item_angebot.classList.remove('active');
+        nav_item_standorte.classList.remove('active');
+        nav_item_team.classList.remove('active');
+        nav_item_minecraft.classList.remove('active');
+
+        document.getElementById(page).style.display = 'block';
+        document.getElementById('nav-item-' + page).classList.add('active');
+    }
+</script>
+</body>
+</html>

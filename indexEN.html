@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Welcome to Nimblecraft!</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: aqua;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: red;
+            text-decoration: underline;
+        }
+
+        dt {
+            font-weight: bold;
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        #content {
+            grid-area: content;
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        #wrapper {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-areas: "header" "nav" "content" "footer";
+        }
+
+        @media (min-width: 700px) {
+            #wrapper {
+                grid-template-columns: 1fr 4fr;
+                grid-template-areas: "header header" "nav content" "footer footer"
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+        }
+
+        #angebot,
+        #standorte,
+        #team,
+        #minecraft {
+            display: none;
+        }
+
+        .nav-item {
+            cursor: pointer;
+        }
+
+        .nav-item.active {
+            font-weight: bold;
+        }
+
+        .nav-item.active::before {
+            content: url(gif/dancing-blue-arrow-slow.gif);
+            padding-right: 0.2rem;
+        }
+
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <a href="./indexEN.html"><h1>Nimblecraft – wir entwickeln software...</h1></a>
+        <hr>
+    </header>
+    <nav id="navigation">
+        <h3>Nimblecraft</h3>
+        <ul>
+            <li onclick="show('ueberuns')" class="nav-item active" id="nav-item-ueberuns">About us</li>
+            <li onclick="show('angebot')" class="nav-item" id="nav-item-angebot">Services</li>
+            <li onclick="show('standorte')" class="nav-item" id="nav-item-standorte">Locations</li>
+            <li onclick="show('team')" class="nav-item" id="nav-item-team">Our Team</li>
+            <li onclick="show('minecraft')" class="nav-item" id="nav-item-minecraft">Minecraft</li>
+            <li class="nav-item"><a href="index.html">German Version</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <section id="ueberuns">
+            <h2>About us</h2>
+
+            <img src="gif/3-bobbing-hamsters.gif"/>
+
+            <p>
+                We are Nimblecraft - a Bonn-based software development company with branches in Hamburg and Białystok,
+                Poland.
+                Software development is our passion. We trust in Java, OpenSource and, last but not least, in our
+                experienced team. All of this we deploy to bring our clients software that is key to their business, or
+                to professionally consult them in issues regarding architecture, tools or approaches.
+            </p>
+        </section>
+
+        <section id="angebot">
+            <h2>Services</h2>
+
+            <img src="gif/ringing-bell.gif"/>
+
+            <article>
+                <h3>Product Development</h3>
+                <p> You need a mobile or a web-based application that is not available as a standard solution? We
+                    support you throughout the entire process from brainstorming to the finished product. We develop the
+                    software agile with fast feedback cycles. We are the specialists for technology and support
+                    decisions constructively with critical questions and brilliant solution ideas. Lean Startup or
+                    Scrum? Both! When an MVP becomes a successful product, we can scale. We deliver a high-quality,
+                    ready-to-use product in the cloud and are available for maintenance and continuous further
+                    development. </p>
+            </article>
+
+            <img src="gif/hacking-computer-nerd.gif"/>
+
+            <article>
+                <h3>Digitilization</h3>
+                <p>You want to become more efficient and modern, exploit new potentials by integrating existing
+                    services, using artificial intelligence and complex automation? We support you by analyzing business
+                    models, data and requirements and questioning them logically and technically. We are constructive
+                    and provide excellent solutions. After the analysis we develop services or complete systems. We
+                    drive the process to the finished solution and do not leave our customers alone during maintenance.
+                    We develop agile and work at a fixed price. </p>
+            </article>
+
+            <img src="gif/computer-using-itself.gif"/>
+
+            <article>
+                <h3>Consulting</h3>
+                <p>You need external resources, want to apply changes or need the adivice of experts? We take over
+                    development work or advise you in questions of architecture and methodology. Our experienced
+                    employees always bring along an agile mindset, work practically and create value: On site (only
+                    Hamburg or Bonn) with highly qualified specialists in software development or the analysis of
+                    business processes and data. This makes your processes more agile, faster and of higher
+                    quality. </p>
+            </article>
+
+            <img src="gif/business-people-talking.gif"/>
+
+            <article>
+                <h3>Maintenance</h3>
+                <p>Are you looking for a reliable partner to maintain your systems? Of course we take over the
+                    maintenance of the solutions, which we have built, as well as of existing Java systems. For
+                    software, that we have developed, we can carry out small and large changes at a reasonable price -
+                    thanks to the agile procedure and automated tests. This allows you to continue using the software
+                    for a longer time while meeting also security and legal requirements. </p>
+            </article>
+
+            <img src="gif/bouncing-computer-station.gif"/>
+
+            <article>
+                <h3>Our Systems</h3>
+                <ul>
+                    <li>are available 24/7</li>
+                    <li>have been implemented Europe-wide by large enterprises</li>
+                    <li>process many millions of requests daily</li>
+                    <li>work with data from over 50 million clients</li>
+                    <li>are being continuously integrated and tested</li>
+                    <li>have thousands of users</li>
+                    <li>are being constantly developed for more than ten years</li>
+                    <li>have replaced old systems</li>
+                    <li>are mostly back-end systems, but have front-end elements</li>
+                </ul>
+            </article>
+
+            <img src="gif/fire-burning-hot-text.gif"/>
+
+            <article>
+                <h3>Unsere Werkzeuge</h3>
+                <dl>
+                    <dt>Java</dt>
+                    <dd>"The standard for efficient and stable server software."</dd>
+                    <dt>Spring</dt>
+                    <dd>"Has imposed and popularised dependency injection in the Java Enterprise field. Always one step
+                        ahead of JEE and all other competition."
+                    </dd>
+                    <dt>Hibernate</dt>
+                    <dd>"JPA is the standard, Hibernate is the implementation - the most established solution."</dd>
+                    <dt>Jenkins</dt>
+                    <dd>"The standard for open-source continuous integration."</dd>
+                    <dt>Git</dt>
+                    <dd>"More than 65 millions of GitHub repositories and 24 millions of registered developers speak for
+                        themselves."
+                    </dd>
+                    <dt>SonarQube</dt>
+                    <dd>"The data warehouse for software development, the cherry on the cake for Jenkins."</dd>
+                    <dt>Gradle</dt>
+                    <dd>"The best Java build tool. Fastest feedback thanks to incremental and parallel builds. Essential
+                        for continuous integration."
+                    </dd>
+                    <dt>Docker</dt>
+                    <dd>"In a container Software works on all devices equally."</dd>
+                    <dt>Kubernetes</dt>
+                    <dd>"Automatic scalability and orchestration of containers."</dd>
+                    <dt>aws</dt>
+                    <dd>"Be global within minutes."</dd>
+                    <dt>TypeScript</dt>
+                    <dd>"All benefits without the problems of Javascript."</dd>
+                    <dt>Cucumber</dt>
+                    <dd>"The BDD-tool which combines specification and test documentation."</dd>
+                </dl>
+            </article>
+
+            <img src="gif/valentine-hearts.gif"/>
+
+        </section>
+
+        <section id="standorte">
+            <h2>Standorte</h2>
+
+            <img src="map.png" style="max-width: 100%;"/>
+        </section>
+
+        <section id="team">
+            <h2>Unser Team</h2>
+
+            <img src="gif/can-can-dancer-cow.gif"/>
+
+
+            <article>
+                <h3>Deutschland</h3>
+
+                <ul>
+                    <li><img src="img.png"/> Virginia Bechtel – Graphic Designer</li>
+                    <li><img src="img.png"/> Bastian Dirks – UI/UX Designer</li>
+                    <li><img src="img.png"/> Hildetraut Ehrenberg – Business Analystin</li>
+                    <li><img src="img.png"/> Wieland Fleischmann – Developer</li>
+                    <li><img src="img.png"/> Wanke Franka – Division Assistant</li>
+                    <li><img src="img.png"/> Gertraud Freiberg – Business Analystin</li>
+                    <li><img src="img.png"/> Harribert Holzwarth – Business Analyst</li>
+                    <li><img src="img.png"/> Bernhardt Israel – Developer</li>
+                    <li><img src="img.png"/> Viviane Kipp – HR Business Partner</li>
+                    <li><img src="img.png"/> Eckard Linn – Developer</li>
+                    <li><img src="img.png"/> Joel Mack – Business Analyst</li>
+                    <li><img src="img.png"/> Falkhard Mahn – IT Support Engineer</li>
+                    <li><img src="img.png"/> Janette Meiser – Developer</li>
+                    <li><img src="img.png"/> Annetrud Paulus – Developer</li>
+                    <li><img src="img.png"/> Elgine Poth – UI/UX Designerin</li>
+                    <li><img src="img.png"/> Wolfdieter Preis – Executive Assistant</li>
+                    <li><img src="img.png"/> Ulvi Schlichtling – Business Analyst</li>
+                    <li><img src="img.png"/> Bonifaz Schön – Standortleiter</li>
+                    <li><img src="img.png"/> Hartmund Scholze – Developer</li>
+                    <li><img src="img.png"/> Jobs Testmeyer – Managing Director</li>
+                    <li><img src="img.png"/> Mathias Reitz – Business Analyst</li>
+                    <li><img src="img.png"/> Dietfried Witte – Business Analyst</li>
+                </ul>
+
+            </article>
+
+            <article>
+                <h3>Polen</h3>
+                <ul>
+                    <li><img src="img.png"/> Wisław Biskup – Developer</li>
+                    <li><img src="img.png"/> Artur Chalupa – Developer</li>
+                    <li><img src="img.png"/> Antonius Gielgud – Developer</li>
+                    <li><img src="img.png"/> Donat Jankiewicz – Developer</li>
+                    <li><img src="img.png"/> Lucjan Kawecki – Developer</li>
+                    <li><img src="img.png"/> Walter Lasota – Developer</li>
+                    <li><img src="img.png"/> Kwiatosław Pala – Developer</li>
+                    <li><img src="img.png"/> Radomir Rinas – Developer</li>
+                    <li><img src="img.png"/> Eugeniusz Wirkus – Developer</li>
+                    <li><img src="img.png"/> Sofroniusz Zagorski – Developer</li>
+                </ul>
+
+            </article>
+
+        </section>
+
+        <section id="minecraft">
+            <h2>Minecraft</h2>
+
+            <img src="gif/spinning-dice.gif"/>
+            <img src="gif/spinning-dice.gif"/>
+            <img src="gif/spinning-dice.gif"/>
+            <img src="gif/spinning-dice.gif"/>
+            <img src="gif/spinning-dice.gif"/>
+            <img src="gif/spinning-dice.gif"/>
+
+            <p>Our company name is Nimblecraft – so of course we run our own Minecraft server!</p>
+
+            <p>Our Minecraft server uses a whitelist. Please write us an email to
+                <img src="aksdlfjksldf.png"/> in order to be added to the whitelist!</p>
+        </section>
+    </div>
+    <footer><a href="https://www.cronn.de">Check out our competition!</a></footer>
+</div>
+<script type="text/javascript">
+    function show(page) {
+        let ueberuns = document.getElementById('ueberuns');
+        let angebot = document.getElementById('angebot');
+        let standorte = document.getElementById('standorte');
+        let team = document.getElementById('team');
+        let minecraft = document.getElementById('minecraft');
+        let nav_item_ueberuns = document.getElementById('nav-item-ueberuns');
+        let nav_item_angebot = document.getElementById('nav-item-angebot');
+        let nav_item_standorte = document.getElementById('nav-item-standorte');
+        let nav_item_team = document.getElementById('nav-item-team');
+        let nav_item_minecraft = document.getElementById('nav-item-minecraft');
+
+        ueberuns.style.display = 'none';
+        angebot.style.display = 'none';
+        standorte.style.display = 'none';
+        team.style.display = 'none';
+        minecraft.style.display = 'none';
+
+        nav_item_ueberuns.classList.remove('active');
+        nav_item_angebot.classList.remove('active');
+        nav_item_standorte.classList.remove('active');
+        nav_item_team.classList.remove('active');
+        nav_item_minecraft.classList.remove('active');
+
+        document.getElementById(page).style.display = 'block';
+        document.getElementById('nav-item-' + page).classList.add('active');
+    }
+</script>
+</body>
+</html>

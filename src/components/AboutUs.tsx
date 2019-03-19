@@ -1,7 +1,8 @@
 import {Component} from "react";
 import React from "react";
+import {Trans, WithTranslation, withTranslation} from "react-i18next";
 
-interface IProps {
+interface IProps extends WithTranslation {
     visible: boolean;
 }
 
@@ -12,25 +13,16 @@ class AboutUs extends Component<IProps, object> {
 
         return (
             <section id="ueberuns" style={{display: display}}>
-                <h2>Über Uns</h2>
+                <h2><Trans>aboutUs.title</Trans></h2>
 
                 <img src="gif/3-bobbing-hamsters.gif"/>
 
                 <p>
-                    Wir sind Nimblecraft – ein Softwareunternehmen mit Sitz in Bonn und Filialen in Hamburg und
-                    Białystok
-                    (PL).
-                    Softwareentwicklung ist unsere Leidenschaft. Wir verlassen uns auf Java, Open Source – und
-                    nicht zuletzt
-                    auf unser erfahrenes Team. All dies setzen wir ein, um für unsere Kunden im Raum Köln/Bonn
-                    und Hamburg
-                    geschäftskritische Software zu erstellen oder Sie in Fragen der Architektur, der Werkzeuge
-                    oder des
-                    Vorgehens zu beraten.
+                    <Trans>aboutUs.content</Trans>
                 </p>
             </section>
         );
     }
 }
 
-export default AboutUs;
+export default withTranslation()(AboutUs);

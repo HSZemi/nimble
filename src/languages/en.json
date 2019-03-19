@@ -1,0 +1,88 @@
+{
+  "pagetitle": "Welcome to Nimblecraft!",
+  "tagline": "wir entwickeln software…",
+  "navigation": {
+    "aboutUs": "About us",
+    "offer": "Services",
+    "locations": "Locations",
+    "team": "Our Team",
+    "minecraft": "Minecraft"
+  },
+  "aboutUs": {
+    "title": "About us",
+    "content": "We are Nimblecraft - a Bonn-based software development company with branches in Hamburg and Białystok, Poland. Software development is our passion. We trust in Java, OpenSource and, last but not least, in our experienced team. All of this we deploy to bring our clients software that is key to their business, or to professionally consult them in issues regarding architecture, tools or approaches."
+  },
+  "offer": {
+    "title": "Services",
+    "productDevelopment": {
+      "title": "Product Development",
+      "content": "You need a mobile or a web-based application that is not available as a standard solution? We support you throughout the entire process from brainstorming to the finished product. We develop the software agile with fast feedback cycles. We are the specialists for technology and support decisions constructively with critical questions and brilliant solution ideas. Lean Startup or Scrum? Both! When an MVP becomes a successful product, we can scale. We deliver a high-quality, ready-to-use product in the cloud and are available for maintenance and continuous further development."
+    },
+    "digitilization": {
+      "title": "Digitilization",
+      "content": "You want to become more efficient and modern, exploit new potentials by integrating existing services, using artificial intelligence and complex automation? We support you by analyzing business models, data and requirements and questioning them logically and technically. We are constructive and provide excellent solutions. After the analysis we develop services or complete systems. We drive the process to the finished solution and do not leave our customers alone during maintenance. We develop agile and work at a fixed price."
+    },
+    "consulting": {
+      "title": "Consulting",
+      "content": "You need external resources, want to apply changes or need the adivice of experts? We take over development work or advise you in questions of architecture and methodology. Our experienced employees always bring along an agile mindset, work practically and create value: On site (only Hamburg or Bonn) with highly qualified specialists in software development or the analysis of business processes and data. This makes your processes more agile, faster and of higher quality."
+    },
+    "maintenance": {
+      "title": "Maintenance",
+      "content": "Are you looking for a reliable partner to maintain your systems? Of course we take over the maintenance of the solutions, which we have built, as well as of existing Java systems. For software, that we have developed, we can carry out small and large changes at a reasonable price - thanks to the agile procedure and automated tests. This allows you to continue using the software for a longer time while meeting also security and legal requirements."
+    },
+    "ourSystems": {
+      "title": "Our Systems",
+      "content": {
+        "1": "are available 24/7",
+        "2": "have been implemented Europe-wide by large enterprises",
+        "3": "process many millions of requests daily",
+        "4": "work with data from over 50 million clients",
+        "5": "are being continuously integrated and tested",
+        "6": "have thousands of users",
+        "7": "are being constantly developed for more than ten years",
+        "8": "have replaced old systems",
+        "9": "are mostly back-end systems, but have front-end elements"
+      }
+    },
+    "ourTools": {
+      "title": "Our Tools",
+      "content": {
+        "1": {"dt": "Java", "dd": "\"The standard for efficient and stable server software.\""},
+        "2": {"dt": "Spring", "dd": "\"Has imposed and popularised dependency injection in the Java Enterprise field. Always one step ahead of JEE and all other competition.\""},
+        "3": {"dt": "Hibernate", "dd": "\"JPA is the standard, Hibernate is the implementation - the most established solution.\""},
+        "4": {"dt": "Jenkins", "dd": "\"The standard for open-source continuous integration.\""},
+        "5": {"dt": "Git", "dd": "\"More than 65 millions of GitHub repositories and 24 millions of registered developers speak for themselves.\""},
+        "6": {"dt": "SonarQube", "dd": "\"The data warehouse for software development, the cherry on the cake for Jenkins.\""},
+        "7": {"dt": "Gradle", "dd": "\"The best Java build tool. Fastest feedback thanks to incremental and parallel builds. Essential for continuous integration.\""},
+        "8": {"dt": "Docker", "dd": "\"In a container Software works on all devices equally.\""},
+        "9": {"dt": "Kubernetes", "dd": "\"Automatic scalability and orchestration of containers.\""},
+        "10": {"dt": "aws", "dd": "\"Be global within minutes.\""},
+        "11": {"dt": "TypeScript", "dd": "\"All benefits without the problems of Javascript.\""},
+        "12": {"dt": "Cucumber", "dd": "\"The BDD-tool which combines specification and test documentation.\""}
+      }
+    }
+  },
+  "locations": "Locations",
+  "team": {
+    "title": "Our team",
+    "germany": "Germany",
+    "poland": "Poland",
+    "graphicDesigner": "Graphic Designer",
+    "uiuxDesigner": "UI/UX Designer",
+    "businessAnalyst": "Business Analyst",
+    "developer": "Developer",
+    "divisionAssistant": "Division Assistant",
+    "hrBusinessPartner": "HR Business Partner",
+    "itSupportEngineer": "IT Support Engineer",
+    "executiveAssistant": "Executive Assistant",
+    "divisionManager": "Division Manager",
+    "managingDirector": "Managing Director"
+  },
+  "minecraft": {
+    "title": "Minecraft",
+    "content1": "Our company name is Nimblecraft – so of course we run our own Minecraft server!",
+    "content2": "Our Minecraft server uses a whitelist. Please write us an email to",
+    "content3": "in order to be added to the whitelist!"
+  },
+  "footer": "Check out our competition!"
+}

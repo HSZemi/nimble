@@ -1,7 +1,8 @@
 import {Component} from "react";
 import React from "react";
+import {Trans, WithTranslation, withTranslation} from "react-i18next";
 
-interface IProps {
+interface IProps extends WithTranslation {
     visible: boolean;
 }
 
@@ -12,7 +13,7 @@ class Minecraft extends Component<IProps, object> {
 
         return (
             <section id="minecraft" style={{display: display}}>
-                <h2>Minecraft</h2>
+                <h2><Trans>minecraft.title</Trans></h2>
 
                 <img src="gif/spinning-dice.gif"/>
                 <img src="gif/spinning-dice.gif"/>
@@ -21,14 +22,13 @@ class Minecraft extends Component<IProps, object> {
                 <img src="gif/spinning-dice.gif"/>
                 <img src="gif/spinning-dice.gif"/>
 
-                <p>Unser Firmenname ist Nimblecraft – was läge näher, als einen eigenen Minecraft-Server
-                    anzubieten!</p>
+                <p><Trans>minecraft.content1</Trans></p>
 
-                <p>Unser Minecraft-Server verwendet eine Whitelist. Bitte kontaktiere uns unter
-                    <img src="aksdlfjksldf.png"/> , um auf die Whitelist zu kommen!</p>
+                <p><Trans>minecraft.content2</Trans>
+                    <img src="aksdlfjksldf.png"/> <Trans>minecraft.content3</Trans></p>
             </section>
         );
     }
 }
 
-export default Minecraft;
+export default withTranslation()(Minecraft);

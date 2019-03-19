@@ -1,0 +1,95 @@
+{
+  "pagetitle": "Willkommen bei Nimblecraft!",
+  "tagline": "wir entwickeln software…",
+  "navigation": {
+    "aboutUs": "Über Uns",
+    "offer": "Angebot",
+    "locations": "Standorte",
+    "team": "Team",
+    "minecraft": "Minecraft"
+  },
+  "aboutUs": {
+    "title": "Über Uns",
+    "content": "Wir sind Nimblecraft – ein Softwareunternehmen mit Sitz in Bonn und Filialen in Hamburg und Białystok (PL). Softwareentwicklung ist unsere Leidenschaft. Wir verlassen uns auf Java, Open Source – und nicht zuletzt auf unser erfahrenes Team. All dies setzen wir ein, um für unsere Kunden im Raum Köln/Bonn und Hamburg geschäftskritische Software zu erstellen oder Sie in Fragen der Architektur, der Werkzeuge oder des Vorgehens zu beraten."
+  },
+  "offer": {
+    "title": "Angebot",
+    "productDevelopment": {
+      "title": "Produktentwicklung",
+      "content": "Sie wollen eine mobile oder webbasierte Anwendung umsetzen, die es nicht als Standardlösung gibt? Wir unterstützen Sie im gesamten Ablauf von der Ideenfindung bis zum fertigen Produkt. Wir entwickeln die Software agil mit schnellen Feedbackzyklen. Wir sind die Spezialisten für Technik und unterstützen Entscheidungen konstruktiv mit kritischen Fragen und brillanten Lösungsideen. Lean Startup oder Scrum? Beides! Wenn aus einem MVP ein erfolgreiches Produkt entsteht, können wir skalieren. Wir liefern ein qualitativ hochwertiges, betriebsfertiges Produkt in der Cloud und stehen für Pflege und kontinuierliche Weiterentwicklung bereit."
+    },
+    "digitilization": {
+      "title": "Digitalisierung",
+      "content": "Sie wollen effizienter und moderner werden, neue Potentiale durch Integration bestehender Dienste, Einsatz von künstlicher Intelligenz und komplexer Automatisierung ausschöpfen? Wir unterstützen Sie, indem wir Geschäftsmodelle, Daten und Anforderungen analysieren und diese logisch und technisch hinterfragen. Dabei sind wir konstruktiv und liefern exzellente Lösungsvorschläge. Nach der Analyse entwickeln wir Services oder ganze Systeme. Wir treiben den Prozess bis zur fertigen Lösung und lassen unsere Kunden auch im Betrieb nicht allein. Dabei entwickeln wir agil und arbeiten zum Festpreis."
+    },
+    "consulting": {
+      "title": "Consulting",
+      "content": "Sie benötigen externe Ressourcen, wollen etwas verändern oder benötigen Rat von Experten? Wir übernehmen Entwicklungsarbeiten oder beraten Sie in Fragen der Architektur und der Methodik. Unsere erfahrenen Mitarbeiter bringen dabei immer ein agiles Mindset mit, arbeiten praxisorientiert und schaffen Werte: Vor Ort (nur Hamburg oder Bonn) mit hochqualifizierten Fachkräften in der Software-Entwicklung oder der Analyse von Geschäftsprozessen und Daten. So werden Sie in Ihren Prozessen agiler, schneller und erreichen eine höhere Qualität."
+    },
+    "maintenance": {
+      "title": "Pflege und Wartung",
+      "content": "Sie suchen einen zuverlässigen Partner, der Ihre Systeme pflegt und wartet? Selbstverständlich übernehmen wir die Pflege für die Lösungen, die wir gebaut haben, sowie für bestehende Java-Systeme. Bei Software, die wir entwickelt haben, können wir dank des agilen Vorgehens und den automatisierten Tests auch später kleine und große Änderungen und Erweiterungen an der Software preiswert durchführen. So können Sie die Software lange weiter nutzen und dabei Sicherheitsanforderungen und gesetzliche Vorgaben erfüllen."
+    },
+    "ourSystems": {
+      "title": "Unsere Systeme",
+      "content": {
+        "1": "sind 24/7 verfügbar",
+        "2": "werden von großen Unternehmen europaweit eingesetzt",
+        "3": "verarbeiten mehrere Millionen Aufrufe am Tag",
+        "4": "bearbeiten Kundendaten von über 50 Millionen Kunden",
+        "5": "werden kontinuierlich integriert und getestet",
+        "6": "haben tausende Benutzer",
+        "7": "werden ständig weiterentwickelt, und das seit über zehn Jahren",
+        "8": "haben Altsysteme abgelöst",
+        "9": "sind vor allem Back-End-Systeme, haben aber auch Front-End Anteile"
+      }
+    },
+    "ourTools": {
+      "title": "Unsere Werkzeuge",
+      "content": {
+        "1": {"dt": "Java", "dd": "\"Der Standard für performante und stabile Serversoftware.\""},
+        "2": {"dt": "Spring", "dd": "\"Hat Dependency Injection im Java Enterprise Umfeld verbreitet und durchgesetzt. JEE und der anderen Konkurrenz immer einen Schritt voraus.\""},
+        "3": {"dt": "Hibernate", "dd": "\"JPA als Standard, Hibernate als Implementierung – die etablierteste Lösung.\""},
+        "4": {"dt": "Jenkins", "dd": "\"Der Standard für Open Source Continuous Integration.\""},
+        "5": {"dt": "Git", "dd": "\"Über 65 Millionen GitHub Repositories und 24 Millionen registrierte Developer sprechen für sich.\""},
+        "6": {"dt": "SonarQube", "dd": "\"Das Data-Warehouse für Softwareentwicklung. Sahnehäubchen für Jenkins.\""},
+        "7": {"dt": "Gradle", "dd": "\"Das beste Java Build Tool. Schnellstes Feedback durch inkrementelle und parallele Builds. Essentiell für Continous Integration.\""},
+        "8": {"dt": "Docker", "dd": "\"In einem Container funktioniert Software auf allen Geräten gleich.\""},
+        "9": {"dt": "Kubernetes", "dd": "\"Automatisierte Skalierung und Orchestrierung von Containern.\""},
+        "10": {"dt": "aws", "dd": "\"Global produktiv sein - und das innerhalb von Minuten.\""},
+        "11": {"dt": "TypeScript", "dd": "\"Alle Vorteile ohne die Nachteile von Javascript.\""},
+        "12": {"dt": "Cucumber", "dd": "\"Das BDD-Tool, mit dem man Spezifikation und Testdokumentation kombiniert.\""}
+      }
+    }
+  },
+  "locations": "Standorte",
+  "team": {
+    "title": "Unser Team",
+    "germany": "Deutschland",
+    "poland": "Polen",
+    "graphicDesigner_male": "Grafikdesigner",
+    "graphicDesigner_female": "Grafikdesignerin",
+    "uiuxDesigner_male": "UI/UX Designer",
+    "uiuxDesigner_female": "UI/UX Designerin",
+    "businessAnalyst_male": "Business Analyst",
+    "businessAnalyst_female": "Business Analystin",
+    "developer_male": "Entwickler",
+    "developer_female": "Entwicklerin",
+    "divisionAssistant": "Assistenz der Standortleitung",
+    "hrBusinessPartner_male": "HR Business Partner",
+    "hrBusinessPartner_female": "HR Business Partnerin",
+    "itSupportEngineer": "IT Support Engineer",
+    "executiveAssistant": "Assistenz der Geschäftsführung",
+    "divisionManager_male": "Standortleiter",
+    "divisionManager_female": "Standortleiterin",
+    "managingDirector_male": "Geschäftsführer",
+    "managingDirector_female": "Geschäftsführerin"
+  },
+  "minecraft": {
+    "title": "Minecraft",
+    "content1": "Unser Firmenname ist Nimblecraft – was läge näher, als einen eigenen Minecraft-Server anzubieten!",
+    "content2": "Unser Minecraft-Server verwendet eine Whitelist. Bitte kontaktiere uns unter",
+    "content3": " , um auf die Whitelist zu kommen!"
+  },
+  "footer": "Schauen Sie doch auch mal bei der Konkurrenz vorbei!"
+}

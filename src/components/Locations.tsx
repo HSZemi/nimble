@@ -1,7 +1,7 @@
-import {Component} from "react";
-import React from "react";
+import React, {Component} from "react";
+import {Trans, WithTranslation, withTranslation} from "react-i18next";
 
-interface IProps {
+interface IProps extends WithTranslation{
     visible: boolean;
 }
 
@@ -12,7 +12,7 @@ class Locations extends Component<IProps, object> {
 
         return (
             <section id="standorte" style={{display: display}}>
-                <h2>Standorte</h2>
+                <h2><Trans>locations</Trans></h2>
 
                 <img src="map.png" style={{maxWidth: '100%'}}/>
             </section>
@@ -20,4 +20,4 @@ class Locations extends Component<IProps, object> {
     }
 }
 
-export default Locations;
+export default withTranslation()(Locations);

@@ -5,16 +5,22 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Content from "./components/Content";
 import {ABOUT_US, ContentPage} from "./types";
+import {WithTranslation, withTranslation} from "react-i18next";
+import i18next from "i18next";
 
 interface IState {
     visiblePage: ContentPage;
 }
 
-class App extends Component<object, IState> {
+class App extends Component<WithTranslation, IState> {
 
     constructor(props: any) {
         super(props);
         this.state = {visiblePage: ABOUT_US};
+    }
+
+    public componentDidMount(){
+        document.title = i18next.t('pagetitle');
     }
 
     public render() {
@@ -36,4 +42,4 @@ class App extends Component<object, IState> {
     }
 }
 
-export default App;
+export default withTranslation()(App);
